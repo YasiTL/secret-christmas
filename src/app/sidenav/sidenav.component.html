@@ -1,3 +1,24 @@
-<p>
-  sidenav works!
-</p>
+<div class="example-container"  [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav class="example-sidenav" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" >
+      <div class="parent-div">
+        <mat-button-toggle-group class="toggle-group" vertical name="fontStyle" aria-label="Font Style">
+            <mat-button-toggle value="bold">who are you</mat-button-toggle>
+            <mat-button-toggle value="italic">pretty colors</mat-button-toggle>
+            <mat-button-toggle value="underline">wheres my zipcode</mat-button-toggle>
+            <mat-button-toggle value="italic">no box robots</mat-button-toggle>
+            <mat-button-toggle value="underline">lol idk</mat-button-toggle>
+          </mat-button-toggle-group>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="main-content">
+      <app-main-content></app-main-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  </div>
