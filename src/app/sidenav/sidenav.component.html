@@ -8,7 +8,7 @@
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" >
       <div class="parent-div">
         <mat-button-toggle-group class="toggle-group" vertical name="fontStyle" aria-label="Font Style">
-            <mat-button-toggle value="problem1">who are you</mat-button-toggle>
+            <mat-button-toggle value="problem1" routerLink="/problem1" routerLinkActive="active">words are hard</mat-button-toggle>
             <mat-button-toggle value="problem2">pretty colors</mat-button-toggle>
             <mat-button-toggle value="problem3">wheres my zipcode</mat-button-toggle>
             <mat-button-toggle value="problem4">no box robots</mat-button-toggle>
@@ -18,14 +18,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content class="main-content">
-      <div ng-switch="showproblem">
-        <div ng-switch-case="problem1">
-          <app-main-content></app-main-content>
-        </div>
-        <div ng-switch-case="problem2">
-          <app-problem2></app-problem2>
-        </div>
-      </div>
+          <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
   </div>

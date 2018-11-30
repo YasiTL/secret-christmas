@@ -13,6 +13,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MainContentComponent } from './sidenav/main-content/main-content.component';
 import { LoginComponent } from './login/login.component';
 import {MatToolbarModule} from '@angular/material';
+import { Problem1Component } from './sidenav/problem1/problem1.component';
 import { Problem2Component } from './sidenav/problem2/problem2.component';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { Problem2Component } from './sidenav/problem2/problem2.component';
     SidenavComponent,
     MainContentComponent,
     LoginComponent,
+    Problem1Component,
     Problem2Component
   ],
   imports: [
