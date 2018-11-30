@@ -29,7 +29,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -85,7 +86,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "../node_modules/angular-split-flap"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
