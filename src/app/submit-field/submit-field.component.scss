@@ -1,0 +1,33 @@
+.input-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  color: white;
+  border: 1px solid #00c853;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #232323;
+  font-family: "Anonymous Pro", monospace;
+  padding: 6px;
+  height: 18px;
+}
+
+button {
+  color: white;
+  height: 32px;
+  border: none;
+  font-family: "Anonymous Pro", monospace;
+  background-color: #00c853;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  &:hover {
+    background-color: #00ff69;
+    cursor: pointer;
+  }
+
+}
