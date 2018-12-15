@@ -1,5 +1,7 @@
 <div class="input-field">
-  <input>
-  <button>Submit</button>
+  <mat-form-field>
+    <input [formControl]="inputCtrl">
+  </mat-form-field>
+  <button (click)="onSubmit()">Submit</button>
 </div>
 

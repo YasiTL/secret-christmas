@@ -16,6 +16,7 @@ import {MatToolbarModule} from '@angular/material';
 import { Problem1Component } from './sidenav/problem1/problem1.component';
 import { Problem2Component } from './sidenav/problem2/problem2.component';
 import { SubmitFieldComponent } from './submit-field/submit-field.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { SubmitFieldComponent } from './submit-field/submit-field.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
