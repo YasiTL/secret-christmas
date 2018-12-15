@@ -42,3 +42,8 @@ $custom-typography: mat-typography-config(
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Anonymous Pro', monospace; }
+
+em {
+  text-shadow: 0 0 5px #ffffff;
+  font-style: normal;
+}

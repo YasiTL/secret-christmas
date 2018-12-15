@@ -15,6 +15,8 @@ import { LoginComponent } from './login/login.component';
 import {MatToolbarModule} from '@angular/material';
 import { Problem1Component } from './sidenav/problem1/problem1.component';
 import { Problem2Component } from './sidenav/problem2/problem2.component';
+import { SubmitFieldComponent } from './submit-field/submit-field.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,22 +25,23 @@ import { Problem2Component } from './sidenav/problem2/problem2.component';
     MainContentComponent,
     LoginComponent,
     Problem1Component,
-    Problem2Component
+    Problem2Component,
+    SubmitFieldComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
     MatButtonModule,
-    MatSidenavModule,
     MatListModule,
     MatSidenavModule,
     MatIconModule,
     MatButtonToggleModule,
     MatToolbarModule,
-    MatIconModule,
     MatFormFieldModule,
-    MatInputModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
