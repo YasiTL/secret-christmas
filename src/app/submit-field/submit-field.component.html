@@ -1,7 +1,7 @@
 <div class="input-field">
-  <mat-form-field>
-    <input [formControl]="inputCtrl">
-  </mat-form-field>
+  <form (submit)="onSubmit()">
+    <input [(ngModel)]="answer" name="submit-input">
+  </form>
   <button (click)="onSubmit()">Submit</button>
 </div>
 

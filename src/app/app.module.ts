@@ -35,15 +35,13 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule,
     FormsModule,
     MatButtonModule,
-    MatSidenavModule,
     MatListModule,
     MatSidenavModule,
     MatIconModule,
     MatButtonToggleModule,
     MatToolbarModule,
-    MatIconModule,
     MatFormFieldModule,
-    MatInputModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

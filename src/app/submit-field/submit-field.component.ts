@@ -8,7 +8,7 @@ import {FormControl} from '@angular/forms';
 })
 export class SubmitFieldComponent implements OnInit {
 
-  inputCtrl = new FormControl('');
+  answer: string;
 
   constructor() { }
 
@@ -16,7 +16,7 @@ export class SubmitFieldComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.inputCtrl.value);
+    console.log(this.answer);
   }
 
 }
