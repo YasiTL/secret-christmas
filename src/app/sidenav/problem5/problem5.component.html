@@ -2,32 +2,48 @@
   <div class="problem">
 
     <div class="intro">
-      <p>On the first day of Christmas, my true love gave to me…
-        A cipher for which to find the key.</p>
+      <p>On the fifth day of Christmas, my true love gave to me…
+        fiiiive crowded citiiiiies (this is going to be a fun one)</p>
     </div>
 
-    <p>Well, crap. Santa set up a new password on his computer about a week ago, but he’s pretty forgetful.
-      He decided he should encrypt it, instead of leaving it on a post-it note stuck to his monitor.
-      But now he can’t remember his password, or what cipher he used to encrypt it, or really anything else about how encrypted it.
-      Like we said, he’s very forgetful. Here’s the message, can you get Santa’s password for him?
-      (It’s kinda time-sensitive, he put the naughty and nice lists on his computer).
+    <p>There’s a particular cluster of five cities that is notorious for two things: the traffic and the air pollution.
+      This is the perfect combination of elements to make Santa’s gift delivery difficult...and also just so happens to make an interesting problem for you (what a coincidence!)
+      With all the pollution in the air, Santa won’t be able to fly in his sleigh. Instead, he’ll have his reindeer pull it down the streets between the cities.
     </p>
     <p>
+      The cities are arranged as vertices of a regular pentagon, and are Cryptokey Heights, Hashville, Reflection Town, Deep Learning City, and Parseburg, as shown below:
+    </p>
+    <img src="../../../assets/citiesimage.png">
+    <p>
+      After having the elves scout the roads between these cities, they have acquired some data about the usual traffic on the streets between the cities.
+      For each street connecting two cities, they know the general direction of the traffic, depicted by gray arrows (Not each pair of cities is connected by a street,
+      only the ones connected by arrows). The elves were also able to measure traffic flow between a few cities,
+      which determines the average number of cars per minute flowing into or out of a city.
+    </p>
+    <p>
+      Here are their results for traffic flow:
+    </p>
+
+    <ul>
+    <li>Hashville to Cryptokey City: 100</li>
+    <li>Parseburg to Hashville: 40</li>
+    <li>Deep Learning City to Hashville: 60</li>
+    </ul>
+
+    <p>
+      Wait, that’s it? We only have three traffic measurements, but we need all of them. Elves are the worst.
+      Fortunately, it looks like you can still <em><a href="https://en.wikipedia.org/wiki/Flow_network">solve this.</a></em>
+      Keep in mind that the traffic flowing into a city must equal traffic flowing out of a city.
+    </p>
+
+    <p>
       <b>
-        Qzodkbfuzs yk oaybgfqd bmeeiadp ea U pa zaf radsqf uf. Radfgzmfqxk U iuxx nq mnxq fa dqrqdqzoq ftue zafq fa dqyqynqd uf mzk fuyq U zqqp. U fqzp fa radsqf ftuzse eayqfuyqe. Bmeeiadp: yqddk
+        Thus, what is the <em>total traffic flow</em> between all cities?
       </b>
     </p>
 
     <app-submit-field (messageEvent)="receiveMessage($event)"></app-submit-field>
 
-    <!--<form class="example-form">-->
-    <!--<mat-form-field class="example-full-width">-->
-    <!--<input matInput placeholder="enter answer">-->
-    <!--</mat-form-field>-->
-    <!--</form>-->
-    <!--<div class="">-->
-    <!--<button mat-flat-button color="primary">submit</button>-->
-    <!--</div>-->
 
   </div>
 

@@ -23,8 +23,17 @@ p{
   padding: 1em;
   line-height: 1.5em; /* 4px +12px + 4px */
 }
+ul{
+  font-size: 1.3em;
+  margin: 0;
+  padding: 1em;
+  line-height: 1.5em; /* 4px +12px + 4px */
+}
 a{
   color: white;
+}
+.examples{
+  font-size: 1em;
 }
 .problem{
   grid-column-start: 2;

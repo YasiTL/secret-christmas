@@ -20,6 +20,10 @@ const routes: Routes = [
   {path: 'problem4', component: Problem4Component},
   {path: 'problem5', component: Problem5Component},
   {path: 'problem6', component: Problem6Component},
+  {path: '',
+  redirectTo: '/main',
+  pathMatch: 'full'
+  }
 
 ];
 
