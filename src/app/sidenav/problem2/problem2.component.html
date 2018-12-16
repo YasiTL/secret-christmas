@@ -1,5 +1,37 @@
-<p>
-  problem2 works!
-</p>
+<div class="main-content">
+  <div class="problem">
 
-<app-submit-field></app-submit-field>
+    <div class="intro">
+      <p>On the second day of Christmas, my true love gave to me…
+        two prime numbers.</p>
+    </div>
+
+    <p>Santa loves math! Too bad he sucks at it. That’s why he has you. He’s working with prime numbers. He can’t tell you why he needs this info,
+      but it seems pretty important so I guess you should do it (Santa likes to act as if everything is confidential).
+      Anyway, he wants to find the first <em><a href="https://en.wikipedia.org/wiki/Mersenne_prime" style="color:white">Mersenne Prime</a></em> that exceeds 1000. Seems simple enough.
+      But of course, Santa only wants the first Mersenne Prime whose exponent p is also prime. Go figure. Recall that a Mersenne Prime has the form
+
+      <em>n = 2^p - 1</em>
+
+      where p is a positive integer. Also keep in mind that the formula above does not necessarily generate a prime number--it’s just a good way to find them.
+    </p>
+    <p>
+      <b>
+        Given this, what is the sum of the Mersenne Prime and the prime exponent p?
+      </b>
+    </p>
+
+    <app-submit-field (messageEvent)="receiveMessage($event)"></app-submit-field>
+
+    <!--<form class="example-form">-->
+    <!--<mat-form-field class="example-full-width">-->
+    <!--<input matInput placeholder="enter answer">-->
+    <!--</mat-form-field>-->
+    <!--</form>-->
+    <!--<div class="">-->
+    <!--<button mat-flat-button color="primary">submit</button>-->
+    <!--</div>-->
+
+  </div>
+
+</div>

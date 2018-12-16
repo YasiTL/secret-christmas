@@ -2,6 +2,6 @@
   <form (submit)="onSubmit()">
     <input [(ngModel)]="answer" name="submit-input">
   </form>
-  <button (click)="onSubmit()">Submit</button>
+  <button (click)="onSubmit(answer)">Submit</button>
 </div>
 

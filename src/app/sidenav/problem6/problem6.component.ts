@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { PROBLEMS } from '../../problems';
-import { MatSnackBar } from '@angular/material';
+import {PROBLEMS} from '../../problems';
+import {MatSnackBar} from '@angular/material';
 
 @Component({
-  selector: 'app-problem2',
-  templateUrl: './problem1.component.html',
-  styleUrls: ['./problem1.component.scss']
+  selector: 'app-problem6',
+  templateUrl: './problem6.component.html',
+  styleUrls: ['./problem6.component.scss']
 })
-export class Problem1Component implements OnInit {
+export class Problem6Component implements OnInit {
 
   problems = PROBLEMS;
 
@@ -17,9 +17,9 @@ export class Problem1Component implements OnInit {
   }
 
   receiveMessage($event) {
-    if ($event === this.problems[0].solution) {
+    if ($event === this.problems[5].solution) {
       console.log('CORRECT');
-      this.openSnackBar('Correct! CLUE: ' + this.problems[0].clue, 'Ok');
+      this.openSnackBar('Correct! CLUE: ' + this.problems[5].clue, 'Ok');
     } else {
       this.openSnackBar('Please try again.', 'Ok');
     }
@@ -30,4 +30,5 @@ export class Problem1Component implements OnInit {
     this.snackBar.open(message, action, {
     });
   }
+
 }

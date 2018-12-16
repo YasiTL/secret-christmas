@@ -1,3 +1,49 @@
-<p>
-  main content works!
-</p>
+<div class="main-content">
+  <div class="problem">
+
+      <!--<ul class="list-group">-->
+        <!--<li *ngFor="let person of persons" class="list-group-item">-->
+          <!--<div class="text-muted small">-->
+            <!--<p>-->
+            <!--{{person.user}} {{person.problem1}} {{person.problem2}}-->
+            <!--</p>-->
+          <!--</div>-->
+        <!--</li>-->
+      <!--</ul>-->
+
+    <p>
+      Its been a pretty rough Christmas. The elves are unionizing and no one taught Santa how to use Windows 10.
+      Come on Santa, its been 3 years.
+    </p>
+    <p>
+      Santa needs your help to get his life together and make sure everyone gets their presents on time.
+      He is holding your present hostage, and through completion of each problem, Santa will give you
+      another hint to where your present is.
+    </p>
+    <ul>
+      <li>Please dont brute force answers.</li>
+      <li>There is no penalty for being wrong.</li>
+      <li>Some problems may be case sensitive. </li>
+      <li>It is in your best interest to write down your solutions and clues. (santa didnt have beta testers)</li>
+      <li>You have 3 hints.</li>
+    </ul>
+
+    <div class="green">
+      <p>
+        You should have a login flag, please enter it below to begin. You will need this any time you begin to play.
+        Sorry, Santa isnt that great at backend stuff or authentication.
+      </p>
+    </div>
+
+    <div class="example-form">
+      <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>enter your login</mat-label>
+        <input matInput #answer>
+      </mat-form-field>
+        <button mat-flat-button (click)="onSubmit(answer.value)">login</button>
+    </div>
+
+
+  </div>
+
+</div>

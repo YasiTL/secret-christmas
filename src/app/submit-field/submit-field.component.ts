@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-submit-field',
@@ -9,13 +9,15 @@ export class SubmitFieldComponent implements OnInit {
 
   answer: string;
 
+  @Output() messageEvent = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  onSubmit() {
-    console.log(this.answer);
+  onSubmit(answer) {
+    this.messageEvent.emit(answer);
   }
 
 }
