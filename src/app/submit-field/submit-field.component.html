@@ -1,5 +1,5 @@
 <div class="input-field">
-  <form (submit)="onSubmit()">
+  <form (submit)="onSubmit(answer)">
     <input [(ngModel)]="answer" name="submit-input">
   </form>
   <button (click)="onSubmit(answer)">Submit</button>
